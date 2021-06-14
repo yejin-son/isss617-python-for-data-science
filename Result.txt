@@ -1,0 +1,200 @@
+ISSS617 - Python For Data Science: Assignment
+Name: Yejin Son
+Email: yejin.son.2019@mitb.smu.edu.sgSubmitted on: 25th April, 2021
+
+
+###########################################################
+###########################################################
+A First Profile
+
+(1) Number of distinct words
+Obama Speech: 2033 distinct words
+Trump Speech: 2307 distinct words
+
+(2) Length of words
+The result is sorted by frequency in descending order
+Obama Speech - Frequency by length of words
+    Frequency
+3        1168
+4        1094
+2        1032
+5         618
+6         561
+7         491
+8         315
+9         225
+1         171
+10        169
+11        163
+12         32
+13         20
+14          5
+15          3
+17          2
+16          1
+32          1
+23          1
+18          1
+27          1
+20          1
+
+Trump Speech - Frequency by length of words
+    Frequency
+3        1182
+4        1037
+2         922
+5         696
+6         551
+7         545
+8         476
+9         313
+11        217
+1         191
+10        166
+12         66
+13         27
+14         20
+15         11
+16          4
+18          3
+
+
+(3) Length of sentences
+Length of each sentence
+<Obama Speech>
+[238, 69, 11, 49, 11, 16, 55, 11, 111, 183, 194, 11, 50, 87, 130, 87, 35, 11, 38, 11, 25, 11, 11, 11, 25, 11, 54, 36, 39, 84, 70, 30, 138, 116, 113, 62, 76, 165, 225, 39, 229, 123, 35, 236, 377, 36, 44, 35, 121, 129, 179, 91, 11, 143, 11, 85, 11, 90, 155, 84, 11, 118, 46, 11, 192, 73, 11, 219, 106, 85, 52, 49, 68, 272, 154, 99, 20, 25, 137, 125, 222, 209, 63, 11, 58, 11, 50, 81, 16, 55, 11, 179, 11, 27, 11, 60, 79, 223, 136, 132, 84, 69, 52, 11, 107, 63, 181, 53, 11, 53, 76, 61, 11, 30, 11, 13, 86, 336, 117, 65, 75, 70, 145, 11, 126, 173, 11, 79, 68, 63, 39, 11, 13, 4, 11, 214, 11, 125, 90, 11, 170, 101, 11, 124, 31, 11, 26, 183, 11, 57, 33, 11, 85, 154, 91, 11, 81, 42, 48, 11, 44, 78, 61, 116, 11, 18, 58, 112, 11, 157, 27, 87, 155, 11, 64, 134, 11, 142, 11, 29, 86, 11, 361, 253, 11, 94, 21, 89, 199, 181, 136, 11, 47, 11, 81, 118, 71, 163, 149, 11, 47, 86, 140, 26, 96, 199, 83, 100, 26, 66, 7, 11, 7, 20, 20, 11, 20, 137, 11, 88, 240, 95, 100, 129, 83, 132, 91, 164, 110, 72, 62, 89, 11, 196, 76, 51, 139, 167, 48, 11, 37, 50, 217, 11, 118, 11, 36, 200, 114, 102, 158, 12, 11, 12, 138, 102, 11, 136, 47, 11, 77, 11, 100, 218, 71, 94, 138, 80, 127, 11, 121, 92, 11, 123, 220, 171, 113, 132, 11, 57, 11, 180, 63, 147, 105, 61, 50, 23, 32, 27, 11, 32, 96, 163, 11, 136, 11, 204, 107, 111, 168, 137, 175, 57, 24, 11, 126, 11, 25, 27, 64, 69, 11, 97, 11, 21, 11, 113, 11, 21, 46, 71, 135, 349, 33, 16, 11, 42, 40, 35, 11, 225, 96, 188, 44, 66, 43, 62, 85, 33, 264, 69, 88, 101, 154, 80, 185, 43, 133, 181, 80, 249, 23, 41, 70, 215, 58, 149, 11, 29, 11, 137, 11, 164, 41, 21, 11, 48, 11, 48, 11, 69, 103, 38, 11, 151, 18, 63, 28, 215, 55, 260, 223, 37, 37, 41, 79, 256, 8, 13, 154, 11, 210, 15, 31, 481, 101, 36, 126, 66, 31, 66, 160, 158, 183, 174, 11, 173, 138, 11, 296, 26, 27, 11, 12, 23, 90, 49, 66, 96, 11, 25, 39]
+
+<Trump Speech>
+[37, 10, 20, 188, 60, 158, 11, 109, 37, 11, 109, 11, 151, 137, 40, 111, 11, 85, 115, 23, 29, 23, 22, 155, 11, 263, 231, 11, 94, 11, 10, 123, 147, 11, 59, 11, 138, 11, 5, 149, 11, 125, 11, 64, 11, 71, 11, 76, 62, 11, 55, 11, 73, 11, 106, 11, 52, 11, 94, 130, 11, 108, 111, 11, 157, 11, 191, 11, 27, 11, 71, 11, 167, 17, 65, 12, 11, 55, 175, 189, 11, 180, 11, 85, 17, 93, 82, 16, 77, 87, 29, 5, 11, 16, 127, 104, 121, 11, 86, 64, 11, 186, 11, 82, 144, 222, 11, 61, 11, 133, 11, 105, 11, 95, 75, 121, 58, 15, 11, 94, 14, 138, 11, 137, 44, 97, 11, 102, 11, 109, 24, 265, 11, 60, 142, 264, 72, 30, 131, 11, 98, 11, 89, 122, 11, 68, 56, 113, 89, 11, 62, 11, 25, 12, 20, 127, 35, 11, 20, 27, 46, 11, 110, 11, 146, 11, 70, 11, 164, 180, 28, 11, 15, 50, 58, 35, 22, 42, 76, 86, 44, 59, 65, 59, 139, 11, 17, 168, 51, 11, 78, 74, 38, 15, 11, 133, 83, 143, 11, 138, 61, 11, 169, 95, 103, 88, 74, 8, 11, 45, 59, 147, 41, 73, 20, 11, 108, 162, 11, 108, 150, 11, 91, 205, 89, 20, 11, 113, 145, 73, 148, 11, 153, 11, 126, 89, 51, 63, 11, 117, 11, 89, 7, 11, 65, 69, 11, 146, 11, 77, 168, 244, 112, 11, 271, 152, 57, 99, 139, 180, 11, 155, 11, 108, 74, 69, 108, 34, 11, 128, 11, 88, 154, 112, 63, 11, 16, 6, 6, 63, 68, 11, 198, 11, 69, 114, 91, 161, 165, 11, 97, 118, 115, 78, 11, 330, 11, 81, 7, 11, 36, 11, 34, 19, 104, 118, 101, 113, 105, 57, 11, 55, 133, 25, 20, 11, 100, 127, 11, 136, 11, 126, 190, 11, 162, 11, 92, 11, 185, 11, 126, 11, 240, 11, 46, 11, 120, 132, 11, 74, 118, 11, 182, 138, 201, 142, 110, 86, 183, 32, 133, 78, 75, 53, 82, 63, 84, 102, 124, 111, 53, 29, 16, 11, 81, 184, 11, 83, 98, 11, 78, 129, 108, 11, 174, 46, 11, 73, 11, 135, 131, 11, 116, 83, 190, 93, 26, 11, 76, 20, 10, 11, 266, 11, 114, 11, 218, 89, 10, 11, 33, 24, 124, 11, 35, 27, 30, 38, 127, 134, 99, 11, 110, 79, 257, 11, 107, 11, 91, 188, 101, 162, 11, 54, 95, 48, 31, 29, 24, 251, 94, 26, 187, 223, 77, 10, 11, 116, 48, 17, 145, 120, 15, 25, 21, 130, 59, 175, 57, 30, 10, 11, 20, 25, 135, 138, 102, 76, 60, 170, 11, 79, 50, 11, 97, 160, 82, 58, 95, 12, 33, 25, 11, 85, 140, 103, 79, 118, 83, 11, 208, 83, 70, 93, 59, 128, 15, 11, 34, 41, 70, 72, 11, 17, 7, 7, 47, 20, 64, 100, 132, 143, 96, 162, 166, 291, 162, 11, 49, 17, 16, 23, 171, 11, 47, 43, 94, 63, 76, 44, 44, 39, 80, 132, 11, 10, 14, 22, 20, 11]
+For the further detailed analysis, please refer to the jupyter notebook results.
+
+
+(4) Number and frequency of applause
+Obama Speech: 89 
+Trump Speech: 132 
+
+
+
+
+(5) Number of country names mentioned
+List of Countries mentioned: ['Afghanistan', 'China', 'Colombia', 'Cuba', 'Iraq', 'Pakistan', 'Ukraine', 'United States', 'Yemen', 'Canada', 'Guatemala', 'Honduras', 'Israel', 'Mexico', 'Nicaragua', 'El Salvador', 'America'] 
+Obama Speech: 84 
+Trump Speech: 126 
+
+
+
+###########################################################
+###########################################################
+Processing Log
+###########################################################
+###########################################################
+The answer appears in (word, frequency) format, sorted by descending order.
+
+(1) Stop Words
+<Obama Speech>
+a) Top 100 Stop Words
+[('the', 285), ('to', 208), ('and', 192), ('of', 150), ('that', 130), ('we', 122), ('a', 119), ('in', 104), ('our', 91), ('is', 72), ('it', 69), ('for', 59), ('i', 57), ('or', 51), ('on', 41), ('this', 40), ('who', 40), ('not', 40), ('but', 38), ('have', 36), ('as', 35), ('us', 34), ('are', 29), ('you', 28), ('their', 27), ('will', 26), ('they', 26), ('be', 25), ('just', 25), ('with', 24), ('when', 24), ('more', 23), ('all', 22), ('do', 22), ('now', 22), ('if', 21), ('so', 20), ('make', 19), ('there', 19), ('can', 19), ('by', 19), ('up', 18), ('even', 18), ('out', 18), ('because', 17), ('should', 16), ('from', 15), ('how', 15), ('every', 15), ('over', 15), ('has', 14), ('see', 14), ('than', 13), ('them', 13), ('some', 12), ('get', 12), ('what', 12), ('at', 11), ('about', 11), ('most', 11), ('only', 11), ('back', 10), ('next', 10), ('those', 10), ('no', 10), ('one', 9), ('an', 9), ('together', 9), ('these', 9), ('why', 9), ('his', 9), ('my', 8), ('been', 8), ('keep', 8), ('still', 8), ('system', 8), ('made', 8), ('give', 8), ('me', 8), ('he', 8), ('him', 8), ('don', 8), ('other', 7), ('done', 7), ('also', 7), ('where', 7), ('everything', 7), ('take', 7), ('here', 6), ('go', 6), ('was', 6), ('without', 6), ('its', 6), ('same', 6), ('may', 6), ('many', 6), ('last', 5), ('each', 5), ('did', 5), ('then', 5)]
+
+
+b) Top 100 Common Words
+
+[('the', 285), ('to', 208), ('and', 192), ('of', 150), ('that', 130), ('we', 122), ('a', 119), ('in', 104), ('our', 91), ('applause', 89), ('is', 72), ('it', 69), ('for', 59), ('i', 57), ('or', 51), ('on', 41), ('this', 40), ('who', 40), ('not', 40), ('but', 38), ('have', 36), ('as', 35), ('us', 34), ('are', 29), ('you', 28), ('america', 28), ('people', 27), ('their', 27), ('will', 26), ('they', 26), ('be', 25), ('just', 25), ('thatõs', 25), ('s', 25), ('world', 24), ('with', 24), ('when', 24), ('more', 23), ('work', 22), ('all', 22), ('do', 22), ('now', 22), ('american', 22), ('if', 21), ('so', 20), ('make', 19), ('there', 19), ('want', 19), ('itõs', 19), ('can', 19), ('new', 19), ('by', 19), ('up', 18), ('years', 18), ('even', 18), ('out', 18), ('year', 17), ('because', 17), ('change', 16), ('economy', 16), ('should', 16), ('americans', 15), ('from', 15), ('better', 15), ('need', 15), ('how', 15), ('every', 15), ('weõve', 15), ('over', 15), ('has', 14), ('see', 14), ('like', 13), ('right', 13), ('way', 13), ('than', 13), ('them', 13), ('some', 12), ('get', 12), ('what', 12), ('future', 12), ('country', 12), ('job', 12), ('at', 11), ('about', 11), ('most', 11), ('only', 11), ('going', 10), ('back', 10), ('t', 10), ('next', 10), ('those', 10), ('security', 10), ('no', 10), ('one', 9), ('know', 9), ('an', 9), ('together', 9), ('believe', 9), ('these', 9), ('time', 9)]
+
+
+c) Top 100 Rare Words
+
+[('thank', 1), ('confident', 1), ('hopeful', 1), ('optimistic', 1), ('challenge', 1), ('undaunted', 1), ('hearted', 1), ('eyed', 1), ('clear', 1), ('worth', 1), ('precious', 1), ('count', 1), ('polls', 1), ('volunteers', 1), ('casts', 1), ('cast', 1), ('wait', 1), ('woman', 1), ('elderly', 1), ('taught', 1), ('overrides', 1), ('whose', 1), ('father', 1), ('courage', 1), ('finds', 1), ('cheer', 1), ('lines', 1), ('marathon', 1), ('run', 1), ('till', 1), ('tends', 1), ('nurse', 1), ('keeping', 1), ('brave', 1), ('treating', 1), ('cop', 1), ('matters', 1), ('prove', 1), ('determined', 1), ('protester', 1), ('owner', 1), ('starting', 1), ('dreaming', 1), ('mistakes', 1), ('served', 1), ('disease', 1), ('someday', 1), ('teacher', 1), ('project', 1), ('finish', 1), ('late', 1), ('stays', 1), ('dreamer', 1), ('laying', 1), ('pays', 1), ('boss', 1), ('company', 1), ('shifts', 1), ('extra', 1), ('clocked', 1), ('worker', 1), ('unfolding', 1), ('citizenship', 1), ('acts', 1), ('daily', 1), ('ours', 1), ('busy', 1), ('fanfare', 1), ('seek', 1), ('believed', 1), ('king', 1), ('dr', 1), ('creed', 1), ('common', 1), ('bound', 1), ('republican', 1), ('democrat', 1), ('born', 1), ('native', 1), ('straight', 1), ('gay', 1), ('latino', 1), ('asian', 1), ('white', 1), ('black', 1), ('foremost', 1), ('êvoices', 1), ('helped', 1), ('kindness', 1), ('humor', 1), ('grit', 1), ('vision', 1), ('fairness', 1), ('inspired', 1), ('longer', 1), ('brand', 1), ('decency', 1), ('goodness', 1), ('reflects', 1), ('during', 1)]
+
+
+<Trump Speech>
+a) Top 100 Stop Words
+
+[('the', 291), ('and', 223), ('to', 166), ('of', 150), ('in', 114), ('a', 104), ('is', 101), ('we', 95), ('our', 95), ('you', 71), ('that', 70), ('are', 64), ('for', 63), ('have', 51), ('i', 50), ('on', 40), ('with', 40), ('this', 35), ('very', 34), ('will', 34), ('all', 31), ('has', 28), ('my', 27), ('was', 27), ('as', 27), ('be', 25), ('at', 23), ('than', 23), ('his', 23), ('he', 22), ('also', 22), ('one', 20), ('by', 19), ('more', 19), ('now', 19), ('first', 18), ('your', 18), ('just', 17), ('from', 17), ('an', 17), ('but', 17), ('much', 16), ('every', 16), ('many', 16), ('their', 16), ('ever', 15), ('where', 15), ('it', 14), ('over', 13), ('not', 13), ('last', 13), ('who', 13), ('they', 12), ('into', 12), ('here', 12), ('up', 11), ('done', 11), ('always', 11), ('down', 11), ('out', 10), ('or', 10), ('made', 10), ('so', 10), ('us', 9), ('never', 9), ('am', 9), ('these', 9), ('can', 9), ('three', 8), ('before', 8), ('other', 8), ('back', 8), ('been', 8), ('most', 8), ('under', 8), ('would', 8), ('after', 8), ('what', 8), ('must', 8), ('her', 8), ('being', 7), ('take', 7), ('if', 7), ('were', 7), ('because', 7), ('him', 7), ('since', 6), ('those', 6), ('doing', 6), ('please', 6), ('next', 6), ('when', 6), ('should', 6), ('even', 5), ('anything', 5), ('then', 5), ('keep', 5), ('two', 5), ('had', 5), ('why', 5)]
+
+
+b) Top 100 Common Words
+
+[('the', 291), ('and', 223), ('to', 166), ('of', 150), ('applause', 132), ('in', 114), ('a', 104), ('is', 101), ('we', 95), ('our', 95), ('you', 71), ('that', 70), ('are', 64), ('for', 63), ('have', 51), ('i', 50), ('ñ', 40), ('on', 40), ('with', 40), ('american', 36), ('this', 35), ('very', 34), ('will', 34), ('thank', 31), ('all', 31), ('has', 28), ('my', 27), ('was', 27), ('as', 27), ('be', 25), ('new', 24), ('at', 23), ('than', 23), ('his', 23), ('people', 22), ('he', 22), ('also', 22), ('country', 21), ('america', 21), ('one', 20), ('by', 19), ('more', 19), ('administration', 19), ('now', 19), ('first', 18), ('years', 18), ('tonight', 18), ('americans', 18), ('your', 18), ('americaõs', 17), ('just', 17), ('from', 17), ('an', 17), ('but', 17), ('much', 16), ('states', 16), ('every', 16), ('year', 16), ('many', 16), ('their', 16), ('care', 16), ('ever', 15), ('world', 15), ('where', 15), ('s', 15), ('president', 14), ('congress', 14), ('it', 14), ('over', 13), ('time', 13), ('not', 13), ('u', 13), ('last', 13), ('percent', 13), ('who', 13), ('health', 13), ('united', 12), ('ago', 12), ('they', 12), ('into', 12), ('here', 12), ('nation', 12), ('million', 11), ('working', 11), ('up', 11), ('done', 11), ('always', 11), ('down', 11), ('great', 10), ('jobs', 10), ('out', 10), ('record', 10), ('high', 10), ('or', 10), ('life', 10), ('made', 10), ('criminal', 10), ('law', 10), ('so', 10), ('sanctuary', 10)]
+
+
+c) Top 100 Rare Words
+
+[('shining', 1), ('grace', 1), ('godõs', 1), ('sun', 1), ('spirit', 1), ('begun', 1), ('adventure', 1), ('epic', 1), ('journeys', 1), ('grandest', 1), ('stories', 1), ('thrilling', 1), ('discoveries', 1), ('brightest', 1), ('explored', 1), ('frontiers', 1), ('masterpiece', 1), ('canvas', 1), ('continent', 1), ('soil', 1), ('happen', 1), ('almighty', 1), ('hand', 1), ('everyone', 1), ('truth', 1), ('embracing', 1), ('pathfinders', 1), ('pioneers', 1), ('inheritance', 1), ('glorious', 1), ('exist', 1), ('republic', 1), ('exceptional', 1), ('gentlemen', 1), ('ladies', 1), ('skyscrapers', 1), ('canals', 1), ('dug', 1), ('railroads', 1), ('laid', 1), ('medicine', 1), ('science', 1), ('heights', 1), ('ushered', 1), ('fascism', 1), ('vanquished', 1), ('hunger', 1), ('west', 1), ('wild', 1), ('wilderness', 1), ('tamed', 1), ('unknown', 1), ('braved', 1), ('walk', 1), ('fiercest', 1), ('strongest', 1), ('toughest', 1), ('carved', 1), ('patriots', 1), ('plymouth', 1), ('landed', 1), ('oakley', 1), ('annie', 1), ('crockett', 1), ('davy', 1), ('earp', 1), ('wyatt', 1), ('names', 1), ('armstrong', 1), ('wright', 1), ('tubman', 1), ('harriet', 1), ('earhart', 1), ('amelia', 1), ('douglass', 1), ('frederick', 1), ('abraham', 1), ('macarthur', 1), ('patton', 1), ('pershing', 1), ('generals', 1), ('roosevelt', 1), ('teddy', 1), ('edison', 1), ('thomas', 1), ('legends', 1), ('forged', 1), ('destinies', 1), ('greatness', 1), ('witness', 1), ('bears', 1), ('welcome', 1), ('longer', 1), ('surprise', 1), ('safety', 1), ('makes', 1), ('familyõs', 1), ('fatherõs', 1), ('amyõs', 1), ('townsend', 1)]
+
+
+
+
+
+###########################################################
+###########################################################
+####################Word Association(I)####################
+###########################################################
+###########################################################
+
+
+
+a) Using Loop Structure
+
+<Obama Speech>
+['helping', 'our', 'the', 'the', 'threatening', 'more', 'a', 'the', 'the', 'a', 'keep', 'the', 'of', 'the', 'young', 'to', 'only', 'in', 'million', 'american', 'across', 'brighter', 'a', 'better', 'moonshot', 'make', 'the', 'american', 'the', 'the', 'other', 'the', 'of', 'the', 'keep', 'and', 'of', 'the', 'the', 'issue', 'the', 'todayõs', 'after', 'of', 'american', 'our', 'todayõs', 'our', 'is', 'year', 'the', 'american', 'the', 'central', 'the', 'the', 'every', 'says', 'our', 'the', 'the', 'in', 'in', 'latin', 'cuban', 'the', 'the', 'their', 'targets', 'the', 'the', 'a', 'the', 'the', 'the', 'big', 'the', 'weaken', 'good', 'american', 'is', 'for', 'the', 'american', 'the', 'better', 'the', 'american', 'helped', 'this', 'incredible', 'american', 'our', 'the', 'the', 'our', 'american', 'of']
+['who', 'has', 'who', 'under', 'with', 'and', 'have', 'safe', 'without', 'right', 'ê', 'to', 'they', 'in', 'who', 'have', 'is', 'have', 'have', 'is', 'is', 'is', 'can', 'the', 'that', 'almost', 'who', 'on', 'especially', 'our', 'safe', 'getting', 'is', 'is', 'of', 'do', 'weõre', 'war', 'to', 'and', 'because', 'even', 'war', 'has', 'authorize', 'should', 'in', 'in', 'will', 'stage', 'that', 'will', 'and', 'to', 'has', 'which', 'except', 'behind', 'and', 'because', 'respects', 'ó', 'not', 'we', 'different', 'who', 'who', 'now', 'we', 'to', 'to', 'demand', 'every', 'travel', 'needs', 'of', 'unfolding', 'i', 'we']
+<Trump Speech>
+['our', 'americaõs', 'our', 'the', 'the', 'great', 'our', 'the', 'million', 'million', 'age', 'million', 'age', 'every', 'the', 'of', 'wealthy', 'the', 'the', 'years', 'our', 'administrations', 'of', 'american', 'our', 'our', 'our', 'the', 'his', 'venezuelan', 'òmost', 'the', 'in', 'a', 'serve', 'childrenõs', 'american', 'the', 'our', 'our', 'our', 'put', 'better', 'that', 'in', 'the', 'in', 'our', 'of', 'that', 'the', 'in', 'the', 'rural', 'keep', 'in', 'the', 'of', 'our', 'our', 'in', 'in', 'our', 'that', 'that', 'young', 'better', 'òsome', 'some', 'some', 'our', 'own', 'of', 'the', 'the', 'tonight', 'the', 'the', 'new', 'modern', 'this', 'bless']
+['is', 'is', 'being', 'ñ', 'of', 'and', 'would', 'were', 'have', 'dropped', 'ñ', 'ñ', 'in', 'is', 'with', 'and', 'in', 'by', 'is', 'are', 'has', 'is', 'was', 'stepping', 'and', 'we', 'in', 'look', 'ó', 'war', 'still', 'in', 'are', 'their', 'and', 'first', 'was', 'who', 'by', 'a', 'is', 'and', 'safe', 'where', 'should', 'never', 'we', 'we', 'has', 'is', 'the', 'find', 'find', 'find', 'in', 'ñ', 'bears', 'is', 'where', 'to', 'we', 'and', 'is', 'is', 'is']
+
+
+
+b) Using Regular Expressions
+
+<Obama Speech>
+['helping', 'our', 'the', 'the', 'more', 'a', 'the', 'the', 'keep', 'of', 'young', 'to', 'only', 'million', 'american', 'across', 'brighter', 'a', 'better', 'moonshot', 'make', 'american', 'the', 'other', 'the', 'of', 'the', 'keep', 'and', 'of', 'the', 'the', 'todayõs', 'after', 'of', 'american', 'our', 'our', 'is', 'year', 'the', 'american', 'the', 'the', 'the', 'every', 'says', 'the', 'in', 'latin', 'cuban', 'the', 'the', 'their', 'targets', 'the', 'the', 'a', 'the', 'the', 'big', 'the', 'weaken', 'good', 'american', 'is', 'the', 'american', 'the', 'better', 'the', 'american', 'helped', 'this', 'incredible', 'american', 'our', 'the', 'the', 'our', 'american', 'of']
+['who', 'has', 'who', 'with', 'and', 'safe', 'right', 'to', 'they', 'in', 'have', 'is', 'have', 'have', 'is', 'is', 'is', 'can', 'the', 'almost', 'on', 'especially', 'our', 'safe', 'getting', 'is', 'is', 'weõre', 'war', 'to', 'and', 'because', 'war', 'has', 'authorize', 'should', 'in', 'will', 'stage', 'that', 'will', 'has', 'which', 'except', 'behind', 'and', 'because', 'respects', 'ó', 'we', 'different', 'who', 'who', 'now', 'we', 'to', 'demand', 'every', 'travel', 'needs', 'of', 'unfolding', 'i', 'we']
+<Trump Speech>
+['our', 'americaõs', 'our', 'the', 'the', 'our', 'the', 'million', 'million', 'age', 'million', 'every', 'of', 'wealthy', 'the', 'the', 'years', 'administrations', 'of', 'american', 'our', 'our', 'our', 'the', 'his', 'venezuelan', 'òmost', 'the', 'in', 'childrenõs', 'american', 'the', 'put', 'better', 'that', 'in', 'the', 'in', 'our', 'of', 'that', 'the', 'in', 'rural', 'keep', 'in', 'the', 'of', 'our', 'our', 'in', 'in', 'our', 'that', 'that', 'young', 'òsome', 'some', 'some', 'our', 'own', 'of', 'the', 'the', 'the', 'the', 'new', 'this', 'bless']
+['is', 'is', 'being', 'ñ', 'of', 'would', 'were', 'have', 'dropped', 'ñ', 'in', 'with', 'and', 'in', 'by', 'is', 'has', 'is', 'was', 'stepping', 'and', 'we', 'in', 'look', 'ó', 'war', 'are', 'first', 'was', 'who', 'by', 'a', 'is', 'and', 'safe', 'where', 'should', 'never', 'we', 'we', 'has', 'is', 'the', 'find', 'find', 'find', 'in', 'ñ', 'bears', 'where', 'to', 'we', 'is', 'is', 'is']
+
+
+###########################################################
+###########################################################
+####################Word Association(II)####################
+###########################################################
+###########################################################
+
+Observations are written in the Jupyter Notebook.
+
+<Obama Speech>
+Top 20 Positive words association: 
+[('s', 9), ('america', 8), ('i', 5), ('want', 5), ('way', 4), ('change', 3), ('everybody', 3), ('economy', 3), ('support', 3), ('lot', 3), ('t', 3), ('makes', 3), ('applause', 2), ('it', 2), ('americaõs', 2), ('diversity', 2), ('spirit', 2), ('but', 2), ('for', 2), ('safe', 2)]
+
+Top 20 Negative words association: 
+[('us', 7), ('thing', 6), ('people', 4), ('work', 4), ('now', 4), ('i', 3), ('past', 3), ('better', 3), ('world', 3), ('workers', 3), ('future', 3), ('way', 3), ('politics', 3), ('constructive', 2), ('approach', 2), ('year', 2), ('education', 2), ('shot', 2), ('ways', 2), ('hard', 2)]
+
+<Trump Speech>
+Top 20 Positive words association: 
+[('i', 11), ('ñ', 4), ('country', 3), ('americaõs', 3), ('our', 3), ('and', 3), ('time', 3), ('americans', 3), ('america', 3), ('american', 3), ('a', 3), ('god', 3), ('president', 2), ('launched', 2), ('jobs', 2), ('taken', 2), ('power', 2), ('economy', 2), ('people', 2), ('rising', 2)]
+
+Top 20 Negative words association: 
+[('you', 19), ('much', 13), ('new', 5), ('world', 4), ('care', 4), ('force', 3), ('nation', 3), ('news', 3), ('life', 3), ('u', 2), ('people', 2), ('americans', 2), ('work', 2), ('reciprocity', 2), ('future', 2), ('beautiful', 2), ('daughter', 2), ('inform', 2), ('environment', 2), ('healthy', 2)]
+
+
+
+
+###########################################################
+###########################################################
+################### Speech Summarization ##################
+###########################################################
+###########################################################
+
+
+<Obama Speech>
+Positive Word Summary: s america i want way change everybody economy support lot t makes applause it americaõs diversity spirit but for safe job workers need people work thatõs rigged believe power respect happen doesnõt truth unconditional god appreciate hope priorities justice plenty pushing progress equal theyõre promises medical and fighting past òdogmas emerged stronger nation optimism ensure itõs care secured person choices future first technology challenges whatõs now strongest jobs industry changing long face companies concentrated careers hard works weõve land bipartisan behind fields build recruit college student going theyõve medicare basic parties retirement willing iõd strategies areas feel rules figured ends
+
+Negative Word Summary: us thing people work now i past better world workers future way politics constructive approach year education shot ways hard everybody energy america international agreement think canõt love country you criminal applause traditional students t ourêplanet amazing medical êbutêalsoêeconomic itêor deal restore got outward before ethic rule security health troops state inevitable are things climate lead durable economy years recession automated competition raise communities paying no start engineering providing day great teachers american protections job ever mobile care coverage there improve economic hire him chance discussion like expanding difficult wealthiest disagreement private allowed them shareholders practices corporate meet hopper cancer 
+
+
+
+<Trump Speech>
+Positive Word Summary: i ñ country americaõs our and time americans america american a god president launched jobs taken power economy people rising they seen drug great justice tremendous we states itõs very safe congress provide medicare substantially quickly this news medal medical nationõs constitutional built trump share falling blazing broken borders families values pride union worldõs unparalleled rapidly fighting unbridled witnessing economic dropped joined net times collar consumer reached far scott words energy zones tony ability job biggest massively degree that treated earn strategy signed workers grown òthatõs standing nation evening dreams struggle remember purchased pay tonight greatest iainõs charles gets programs
+
+Negative Word Summary: you much new world care force nation news life u people americans work reciprocity future beautiful daughter inform environment healthy legislation free announce working men ice removed military thank american results incomes surging highly of jobless report been restored country before inclusive success community rise reciprocal lifting average economic half increase ñ rising low reached increases republican communities this army reunited job start law couldnõt past elements i exports trade backing citizens intellectual united relationship weõve ó hemisphere hopes coalition man venezuelans honor struggle unifies invested planes usa share hero all grandfather story th powers education tens itõs scholarships secure 
+
